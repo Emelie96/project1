@@ -1,0 +1,136 @@
+body {
+  /* font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     line-height: 1.5;
+  THESE 3 ATTRIBUTES ABOVE CAN BE REWRITTEN AS
+  */
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(206, 204, 204);
+}
+
+ul {
+  /*THIS REMOVES THE BULLETS IN THE MENU*/
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL CSS */
+.container {
+  width: 80%; /* % ARE USED INSTEAD OF PIXELS TO BUILD A RESPONSIVE WEBPAGE */
+  margin: auto;
+  overflow: hidden; /* THESE IS USED TO HIDE ANYTHING THAT GOES OUTSIDE THE DIV */
+}
+
+header {
+  background: #6288a0;
+  color: white;
+  padding-top: 30px;
+  /*MIN-HEIGHT IS USED FOR A RESPONSIVE WEBPAGE. USED INSTEAD OF HEIGHT SO THAT WHEN IN A SMALLER DEVICE IT CAN ADJUST */
+  min-height: 70px;
+  border-bottom: #6e1313 2px solid;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #6e1313;
+}
+
+header li {
+  display: inline; /*THIS MAKES THE MENU TO BE ALIGNED SIDE BY SIDE*/
+  float: left;
+  padding: 0 20px 0 20px; /*PADDING: TOP RIGHT BOTTOM LEFT*/
+}
+
+header #logo {
+  float: left;
+}
+
+header #logo img {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+#logo img {
+  width: 200px;
+}
+
+#showcase {
+  min-height: 400px;
+  background: url("./images/car.jpg") no-repeat 0 -400px; /* THE 0 AND -400PX REPRESENTS THE X (HORIZONTAL) AND Y (VERTICAL) AXIS*/
+  text-align: center;
+  color: rgb(214, 5, 5);
+}
+
+#showcase h1 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+#showcase p {
+  font-size: 15px;
+}
+
+#newsletter {
+  padding: 15px;
+  color: aliceblue;
+  background-color: #6288a0;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 20px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+.button1 {
+  height: 38px;
+  background: red;
+  color: white;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#boxes {
+  margin-top: 20px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%; /*USING PIXELS FOR WIDTH AND HEIGHT MAKE A WEB PAGE FIXED, PIXELS CAN BE USED WITH MIN-HEIGHT/WIDTH FOR A RESPONSIVE WEBSITE*/
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 100px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
